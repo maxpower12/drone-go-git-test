@@ -8,6 +8,7 @@ workspace:
 steps:
   - name: report
     image: golang
+    privileged: true
     volumes:
       - name: reports
         path: /var/reports
